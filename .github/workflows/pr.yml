@@ -5,9 +5,8 @@ name: Pull Requests
 
 on: [pull_request]
 
-jobs:
-  build:
-    strategy:
+jobs: test
+  build: 
       fail-fast: false
       matrix:
         node: [14.0.0, 14.x, 16.x, 18.x]
