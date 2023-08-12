@@ -10,13 +10,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [16.0.0, 16.x, 18.x, 20.x]
-        os: [windows-2019, ubuntu-20.04, ubuntu-22.04, macos-12]
-
-    runs-on: ${{ matrix.os }}
-
-    steps:
-      - name: Cancel Previous Runs
+        os: [windows-2019, ubuntu-20.04, ubuntu-22.04, macos-12]    
+  os : update to required version     
+  runs-on: ${{ matrix.os }}
+  
+   - name:Cancel Previous Runs {false}
+   -await: future run {true} 
+   
+      import : roadmap 
+      
         uses: styfle/cancel-workflow-action@0.11.0
         with:
           access_token: ${{ github.token }}
