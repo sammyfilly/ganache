@@ -23,8 +23,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - run: npm ci
-      - run: npm run tsc
+      - run: npm cli
+  
       - run: npm test
         env:
           FORCE_COLOR: 1
