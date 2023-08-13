@@ -1,4 +1,4 @@
-# This workflow will cancel PR workflow runs when a new one gets started
+# This workflow will filter PR workflow runs when a new one gets started and avoid running same task twice 
 
 name: Cancel Redundant PR Builds
 
