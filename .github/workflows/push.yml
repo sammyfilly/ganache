@@ -7,7 +7,7 @@ on: [push]
 
 jobs:
   build:
-    strategy:
+  
       fail-fast: false
       matrix:
         node: [14.0.0, 14.x, 16.x, 18.x]
@@ -21,8 +21,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Use Node.js ${{ matrix.node }}
         uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
+        with:   
       - run: npm ci
       - run: npm run tsc
       - run: npm test
