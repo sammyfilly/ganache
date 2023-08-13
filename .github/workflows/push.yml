@@ -3,10 +3,8 @@
 
 name: Commits
 
-on: [push]
-
-jobs:
-  build:
+on: [push] 
+build:
     strategy:
       fail-fast: false
       matrix:
