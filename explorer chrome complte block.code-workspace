@@ -1,0 +1,193 @@
+{
+	"folders": [
+		{
+			"path": "www.blockchain.com"
+		},
+		{
+			"path": "exchange.blockchain.com"
+		},
+		{
+			"path": "www.google-analytics.com"
+		},
+		{
+			"name": "demo-repository",
+			"path": "demo-repository"
+		},
+		{
+			"path": "Blockchain Explorer - Bitcoin Tracker & More _ Blockchain.com_files"
+		},
+		{
+			"path": "../Documents/lockchain chrome"
+		}
+	],
+	"settings": {
+		"githubIssues.queries": [
+			{},
+			{
+				"label": "My Issues",
+				"query": "default"
+			},
+			{
+				"label": "Created Issues",
+				"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+			},
+			{
+				"label": "queries Issues",
+				"query": "state:open repo:${owner}/${repository} sort:updated-desc"
+			}
+		],
+		"window.closeWhenEmpty": false,
+		"window.commandCenter": true,
+		"debug.autoExpandLazyVariables": true,
+		"testing.alwaysRevealTestOnStateChange": true,
+		"testing.autoRun.delay": 998,
+		"testing.countBadge": "passed"
+	},
+	"extensions": {
+		"recommendations": [
+			"aprilandjan.vscode-node-debug-process-picker",
+			"wscats.delete-node-modules",
+			"ms-vscode.node-debug2",
+			"ms-vscode.js-debug-nightly",
+			"github.copilot",
+			"jasonnutter.search-node-modules",
+			"mhutchie.git-graph",
+			"golang.go"
+		]
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "vscode-edge-devtools.debug",
+				"request": "attach",
+				"name": "Attach to Microsoft Edge and open the Edge DevTools",
+				"url": "http://localhost:8080",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Attach to Chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Attach to Chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Launch Chrome",
+				"request": "launch",
+				"type": "chrome",
+				"url": "http://localhost:8080",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"address": "TCP/IP address of process to be debugged",
+				"localRoot": "${workspaceFolder}",
+				"name": "Attach to Remote",
+				"port": 9229,
+				"remoteRoot": "Absolute path to the remote directory containing the program",
+				"request": "attach",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"type": "existing node"
+			},
+			{
+				"name": "Attach to chrome",
+				"port": 9222,
+				"request": "attach",
+				"type": "chrome",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Attach to Process",
+				"type": "go",
+				"request": "attach",
+				"mode": "local",
+				"processId": 1
+			},
+			{
+				"name": "Launch index.html",
+				"type": "firefox",
+				"request": "launch",
+				"reAttach": true,
+				"file": "${workspaceFolder}/index.html"
+			},
+			{
+				"name": "Launch localhost",
+				"type": "firefox",
+				"request": "launch",
+				"reAttach": true,
+				"url": "http://localhost/index.html",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Attach",
+				"type": "firefox",
+				"request": "attach"
+			},
+			{
+				"name": "Launch WebExtension",
+				"type": "firefox",
+				"request": "launch",
+				"reAttach": true,
+				"addonPath": "${workspaceFolder}"
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge",
+				"request": "launch",
+				"runtimeArgs": [
+					"--remote-debugging-port=9222"
+				],
+				"url": "c:\\Users\\ivo\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.2\\out\\startpage\\index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge in headless mode",
+				"request": "launch",
+				"runtimeArgs": [
+					"--headless",
+					"--remote-debugging-port=9222"
+				],
+				"url": "c:\\Users\\ivo\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.2\\out\\startpage\\index.html",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "vscode-edge-devtools.debug",
+				"name": "Open Edge DevTools",
+				"request": "attach",
+				"url": "c:\\Users\\ivo\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.2\\out\\startpage\\index.html",
+				"presentation": {
+					"hidden": true
+				}
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch Edge Headless and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge in headless mode",
+					"Open Edge DevTools"
+				]
+			},
+			{
+				"name": "Launch Edge and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge",
+					"Open Edge DevTools"
+				]
+			}
+		]
+	}
+}
