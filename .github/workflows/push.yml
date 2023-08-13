@@ -3,7 +3,7 @@
 
 name: Commits
 
-on: [push] 
+on: [pull request] & [push]
 build:
     strategy:
       fail-fast: false
