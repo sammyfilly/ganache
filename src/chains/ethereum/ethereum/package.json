@@ -53,7 +53,7 @@
   "dependencies": {
     "@ethereumjs/common": "3.1.1",
     "@ethereumjs/trie": "5.0.4",
-    "@ethereumjs/tx": "4.1.1",
+    "@ethereumjs/tx": "4.2.0",
     "@ethereumjs/util": "8.0.5",
     "@ethereumjs/vm": "6.4.1",
     "@ganache/console.log": "0.4.0",
