@@ -48,7 +48,7 @@
     "truffle"
   ],
   "dependencies": {
-    "@ethereumjs/common": "3.1.1",
+    "@ethereumjs/common": "3.2.0",
     "@ethereumjs/evm": "1.3.1",
     "@ethereumjs/tx": "4.1.1",
     "@ethereumjs/util": "8.0.5",
