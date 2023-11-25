@@ -62,7 +62,7 @@
     "@ganache/ethereum-transaction": "0.8.0",
     "@ganache/ethereum-utils": "0.8.0",
     "@ganache/rlp": "0.8.0",
-    "@ganache/utils": "0.8.0",
+    "@ganache/utils": "0.9.1",
     "emittery": "0.10.0"
   }
 }
