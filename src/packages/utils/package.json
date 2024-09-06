@@ -47,9 +47,9 @@
     "tooling"
   ],
   "dependencies": {
-    "@ganache/secp256k1": "0.5.0",
-    "emittery": "0.10.0",
-    "keccak": "3.0.2",
+    "@ganache/secp256k1": "0.5.2",
+    "emittery": "0.13.1",
+    "keccak": "3.0.4",
     "seedrandom": "3.0.5"
   },
   "devDependencies": {
