@@ -96,13 +96,13 @@
     "@trufflesuite/uws-js-unofficial": "20.10.0-unofficial.2",
     "@types/bn.js": "^5.1.0",
     "@types/lru-cache": "5.1.1",
-    "@types/seedrandom": "3.0.1",
-    "abstract-level": "1.0.3",
+    "@types/seedrandom": "3.0.8",
+    "abstract-level": "1.0.4",
     "abstract-leveldown": "7.2.0",
     "async-eventemitter": "0.2.4",
-    "emittery": "0.10.0",
-    "keccak": "3.0.2",
-    "leveldown": "6.1.0",
+    "emittery": "0.13.1",
+    "keccak": "3.0.4",
+    "leveldown": "6.1.1",
     "secp256k1": "4.0.3"
   },
   "optionalDependencies": {
